@@ -76,4 +76,5 @@ def flower_scene():
     park()
 
 
-flower_scene()
+if __name__ == "__main__":
+    flower_scene()

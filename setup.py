@@ -6,6 +6,7 @@ setup(
     description="A library that allows users to directly control a WaterColorBot by writing Python code.",
     url="http://github.com/jrheard/madison_wcb",
     author="JR Heard",
+    author_email="jrrrheard@gmail.com",
     license="MIT",
     packages=find_packages(),
     install_requires=['requests'],

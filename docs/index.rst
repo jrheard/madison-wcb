@@ -3,23 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. |madison_wcb| replace:: :mod:`madison_wcb`
+
 Welcome to madison_wcb's documentation!
 =======================================
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
-
-
-test what up
+|madison_wcb| is a Python library that allows users to directly control a
+`WaterColorBot <http://watercolorbot.com>`_ by writing Python code.

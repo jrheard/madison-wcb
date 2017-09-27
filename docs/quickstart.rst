@@ -1,6 +1,8 @@
 QuickStart
 ==========
 
+Here's a very short Python program that draws a box in the middle of the screen:
+
 
 TODO explanation of cncserver, instructions (in quickstart?)
 

@@ -8,9 +8,11 @@
 Welcome to madison_wcb's documentation!
 =======================================
 
+Overview
+-------
+
 |madison_wcb| is a Python library that allows users to directly control a
 `WaterColorBot <http://watercolorbot.com>`_ by writing Python code.
-
 Its source code is on `GitHub <https://github.com/jrheard/madison_wcb>`_.
 
 If you'd just like to get started, check out the :doc:`quickstart` guide.
@@ -22,8 +24,8 @@ to the bot, which then automatically paints it on a piece of paper. For more inf
 `the official documentation <http://wiki.evilmadscientist.com/WaterColorBot_Software>`_.
 
 |madison_wcb| is a little bit different: rather than having you draw a picture by hand
-using a mouse or trackpad, |madison_wcb| lets you control the bot directly.
-You write a line of Python code like ``brush_up()`` and the bot lifts the brush away from the page;
+using a mouse or trackpad, |madison_wcb| lets you control the bot directly by writing Python code.
+You write a line like ``brush_up()`` and the bot lifts the brush away from the page;
 you write ``get_color(3)`` and the bot dips the brush in whatever color of paint you've placed
 in the fourth slot of your watercolor palette; etc.
 
@@ -43,3 +45,12 @@ in Portland, Oregon. It has a few intentional API quirks - ``get_color()`` takes
 instead of a string like ``"red"``, and users are required to call ``initialize()`` manually at the
 start of their program - that have been intentionally included to give students practice
 in deciphering new libraries and their documentation. Wink emoji.
+
+Useful pages:
+------------
+
+.. toctree ::
+    :maxdepth: 2
+
+    quickstart
+    madison_wcb

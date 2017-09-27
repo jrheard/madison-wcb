@@ -1,5 +1,9 @@
 from madison_wcb import *
 
+# TODO more examples, in an examples/ directory
+# smiley face
+# star?
+
 
 def draw_flower(x, y):
     brush_up()

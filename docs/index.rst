@@ -5,11 +5,18 @@
 
 .. |madison_wcb| replace:: :mod:`madison_wcb`
 
+.. toctree::
+   :maxdepth: 2
+
+   quickstart
+
 Welcome to madison_wcb's documentation!
 =======================================
 
 |madison_wcb| is a Python library that allows users to directly control a
 `WaterColorBot <http://watercolorbot.com>`_ by writing Python code.
+
+If you'd just like to get started, check out the :doc:`quickstart` guide.
 
 The WaterColorBot is a really neat little robot that can be controlled in a number of ways.
 The standard way of using a WaterColorBot is to use a program like RoboPaint or Inkscape,
@@ -27,9 +34,9 @@ in the fourth slot of your watercolor palette; etc.
 The library also makes use of the ``turtle`` module in order to allow users to visualize
 what their program will paint when it's connected to the WaterColorBot. TODO instructions / examples
 
-TODO explanation of cncserver, instructions
+TODO explanation of cncserver, instructions (in quickstart?)
 
-TODO api quirks
+Again, to get up and running, head on over to the :doc:`quickstart`.
 
 If your goal is to find the sanest, best way to paint pictures using a WaterColorBot,
 your best bet is to read through `the official documentation <http://wiki.evilmadscientist.com/WaterColorBot_Software>`_

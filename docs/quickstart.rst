@@ -62,9 +62,10 @@ it really isn't very long.
 How to actually paint pictures on the WaterColorBot
 ---------------------------------------------------
 
-There's a program called CNC Server that lets computer programs control the WaterColorBot.
+``madison_wcb`` uses a program called CNC Server to control the WaterColorBot.
 In order to have your Python program paint pictures on the bot, go to the
 `CNC Server README <https://github.com/techninja/cncserver/blob/master/README.md>`_ and follow
-the instructions in the **Installation** and **Running** sections. Once you've done that,
-you're good to go - when you run a program that uses :mod:`madison_wcb`, it should automatically draw stuff
-on the robot as well as on your screen.
+the instructions in the **Installation** and **Running** sections.
+
+Once you've done that, you're good to go - when you run a program that uses :mod:`madison_wcb`,
+it should automatically draw stuff on the robot as well as on your screen.

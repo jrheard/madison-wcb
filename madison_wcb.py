@@ -23,7 +23,7 @@ def _make_cnc_request(endpoint):
 ### Public API
 
 def initialize():
-    """Call this function at the beginning of your program."""
+    """IMPORTANT: Call this function at the beginning of your program."""
     try:
         requests.get('http://localhost:4242/poll')
         state['connected_to_bot'] = True
@@ -41,7 +41,7 @@ def initialize():
     park()
 
 def cleanup():
-    """Call this function at the end of your program."""
+    """IMPORTANT: Call this function at the end of your program."""
     brush_up()
     wash_brush()
     park()

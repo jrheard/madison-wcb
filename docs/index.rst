@@ -4,7 +4,7 @@ Welcome to madison_wcb's documentation!
 =======================================
 
 Overview
--------
+--------
 
 |madison_wcb| is a Python library that allows users to directly control a
 `WaterColorBot <http://watercolorbot.com>`_ by writing Python code.

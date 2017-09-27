@@ -1,6 +1,11 @@
 QuickStart
 ==========
 
+Installation
+------------
+
+To install the library, run ``pip install madison_wcb`` at the command line. Now you're ready to paint some pictures!
+
 How to draw stuff on your computer screen
 -----------------------------------------
 

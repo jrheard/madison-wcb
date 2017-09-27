@@ -25,7 +25,7 @@ Here's a short Python program that draws a box in the middle of your computer sc
     # If we didn't include this line, nothing would get drawn!
     brush_down()
 
-    # Do this four times:
+    # Do this next bit four times:
     for i in range(4):
 
         # Move forward twenty steps, then
@@ -34,7 +34,7 @@ Here's a short Python program that draws a box in the middle of your computer sc
         turn_right(90)
 
     # We've finished drawing our box! Wash the brush.
-    # It's a good idea to call cleanup() at the end
+    # It's a good idea to always call cleanup() at the end
     # of your program so the brush doesn't get gross.
     cleanup()
 
@@ -57,4 +57,9 @@ it really isn't very long.
 How to actually paint pictures on the WaterColorBot
 ---------------------------------------------------
 
-TODO explanation of cncserver, instructions (in quickstart?)
+There's a program called CNC Server that lets computer programs control the WaterColorBot.
+In order to have your Python program paint pictures on the bot, go to the
+`CNC Server README <https://github.com/techninja/cncserver/blob/master/README.md>`_ and follow
+the instructions in the **Installation** and **Running** sections. Once you've done that,
+you're good to go - when you run a program that uses :mod:`madison_wcb`, it should automatically draw stuff
+on the robot as well as on your screen.

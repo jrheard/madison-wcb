@@ -2,6 +2,8 @@ import random
 import requests
 import turtle
 
+# TODO change coordinate system from scratch to math
+
 ### Implementation details
 
 # Global mutable state. Forgive me.

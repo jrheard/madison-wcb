@@ -4,7 +4,7 @@ from madison_wcb import *
 def box():
     initialize()
 
-    move_to(-10, -10)
+    move_to(-10, 10)
     point_in_direction(0)
     brush_down()
 

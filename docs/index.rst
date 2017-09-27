@@ -13,11 +13,11 @@ Welcome to madison_wcb's documentation!
 
 The WaterColorBot is a really neat little robot that can be controlled in a number of ways.
 The standard way of using a WaterColorBot is to use a program like RoboPaint or Inkscape,
-draw a picture, and then essentially hit a "print" button that sends the picture
+draw a picture with a mouse/trackpad, and then essentially hit a "print" button that sends the picture
 to the bot, which then paints it on a piece of paper. For more  information, see
 `the official documentation <http://wiki.evilmadscientist.com/WaterColorBot_Software>`_.
 
-|madison_wcb| is a little bit different: rather than letting you draw a picture
+|madison_wcb| is a little bit different: rather than having you draw a picture
 using a mouse or trackpad and then automatically translating that picture
 into instructions that are then sent to the bot, |madison_wcb| lets you control the bot directly.
 You write a line of Python code like ``brush_up()`` and the bot lifts the brush away from the page;
@@ -34,10 +34,11 @@ TODO api quirks
 If your goal is to find the sanest, best way to paint pictures using a WaterColorBot,
 your best bet is to read through `the official documentation <http://wiki.evilmadscientist.com/WaterColorBot_Software>`_
 and use one of the programs that it recommends. If you'd like to write Python code that directly
-drives the WaterColorBot, though, |madison_wcb| is the library for you.
+drives the WaterColorBot, though - perhaps as a teaching aid, for a fun classroom project -
+|madison_wcb| is the library for you.
 
-|madison_wcb| was written for the use of an intermediate Python class in Madison High School
+|madison_wcb| was written for use in an intermediate Python class in Madison High School
 in Portland, Oregon. It has a few intentional API quirks - ``get_color()`` takes an index like ``3``
 instead of a string like ``"red"``, and users are required to call ``initialize()`` manually at the
 start of their program - that have been intentionally included to give students practice
-in deciphering new libraries and their documentation.
+in deciphering new libraries and their documentation. Wink emoji.

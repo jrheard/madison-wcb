@@ -1,4 +1,4 @@
-import madison_wcb
+from madison_wcb import *
 
 
 def draw_flower(x, y):

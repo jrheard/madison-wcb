@@ -1,6 +1,9 @@
 QuickStart
 ==========
 
+How to draw stuff on your computer screen
+-----------------------------------------
+
 Here's a short Python program that draws a box in the middle of your computer screen (and on your WaterColorBot, if it's plugged into your computer)::
 
     # Import all the functions in the `madison_wcb` library.
@@ -42,8 +45,16 @@ Here's a short Python program that draws a box in the middle of your computer sc
     # to look at the picture their code drew!
     input("Done! Press Enter to close the program.")
 
+The important things to remember are that you **must** call ``initialize()`` at
+the beginning of your program, and that you should also call ``cleanup()`` at
+the end of your program. Aside from that, go nuts!
+
+To see a list of all of the different functions you can use to control the bot,
+click on this link: :mod:`madison_wcb`. You can also read the library's
+`source code <https://github.com/jrheard/madison_wcb/blob/master/madison_wcb.py>`_,
+it really isn't very long.
+
+How to actually paint pictures on the WaterColorBot
+---------------------------------------------------
+
 TODO explanation of cncserver, instructions (in quickstart?)
-
-TODO document turtle
-
-TODO figure out best way of not having the program exit early when the turtle visualization is done painting

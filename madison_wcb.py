@@ -1,4 +1,3 @@
-import random
 import requests
 import turtle
 
@@ -18,6 +17,10 @@ WCB_WIDTH = 500
 WCB_HEIGHT = 360
 
 def _make_cnc_request(endpoint):
+    """CNC Server is the way that madison_wcb talks to the WaterColorBot.
+
+    See https://github.com/techninja/cncserver/ for more information.
+    """
     if state['connected_to_bot']:
         requests.get('http://localhost:4242/' + endpoint)
 

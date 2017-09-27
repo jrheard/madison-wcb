@@ -30,14 +30,11 @@ what their program will paint when it's connected to the WaterColorBot.
 If your goal is to find the sanest, best way to paint pictures using a WaterColorBot,
 your best bet is to read through `the bot's official documentation <http://wiki.evilmadscientist.com/WaterColorBot_Software>`_
 and use one of the programs that it recommends. If you'd like to write Python code that directly
-drives the WaterColorBot, though — perhaps as a teaching aid, for a fun classroom project — 
+drives the WaterColorBot, though — perhaps as a teaching aid, for a fun classroom project —
 |madison_wcb| is the library for you.
 
 |madison_wcb| was written for use in an intermediate Python class in Madison High School
-in Portland, Oregon. It has a few intentional API quirks - ``get_color()`` takes an index like ``3``
-instead of a string like ``"red"``, and users are required to call ``initialize()`` manually at the
-start of their program - that have been intentionally included to give students practice
-in deciphering new libraries and their documentation. Wink emoji.
+in Portland, Oregon.
 
 Useful pages
 ------------

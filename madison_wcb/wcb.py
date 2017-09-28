@@ -70,8 +70,11 @@ def get_color(index):
 
         # This is the order of the colors in the palette in our classroom's bot; yours may vary!
         colors = ["black", "red", "orange", "yellow", "green", "blue", "purple", "brown"]
+
         state['turtle'].color(colors[index])
-        # TODO MESS WITH THE TURTLES POSITION????
+
+        # Send the turtle to the top-left corner of the window to imitate the position of the WCB's brush.
+        state['turtle'].goto(-WCB_WIDTH / 2, -WCB_HEIGHT / 2)
 
     else:
         print("Color indexes must be between 0 and 7, but you gave me: " + index)

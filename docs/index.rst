@@ -1,9 +1,5 @@
 .. |madison_wcb| replace:: :mod:`madison_wcb`
 
-TODO mod links don't work on readthedocs for some reason?
-
-adding a docs/rtd-requirements.txt to try to fix the issue, but that won't work until the library is on pip
-
 Welcome to madison_wcb's documentation!
 =======================================
 

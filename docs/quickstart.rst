@@ -25,7 +25,7 @@ Here's a short Python program that draws a box in the middle of your computer sc
 
     # Get ready to draw a box: move to the top-left
     # corner of the box we're going to draw.
-    move_to(-10, 10)
+    move_to(-50, 50)
 
     # Point in the direction of 0 degrees, which is
     # straight to the right.
@@ -38,9 +38,9 @@ Here's a short Python program that draws a box in the middle of your computer sc
     # Do this next bit four times:
     for i in range(4):
 
-        # Move forward twenty steps, then
+        # Move forward a hundred steps, then
         # turn ninety degrees to the right.
-        move_forward(20)
+        move_forward(100)
         turn_right(90)
 
     # We've finished drawing our box! Wash the brush.

@@ -30,12 +30,11 @@ def draw_flower(x, y):
 
 def flower_scene():
     initialize()
-    wash_brush()
     get_color(4) # green
 
     # stem 1
     move_to(-100, -145)
-    point_in_direction(20)
+    point_in_direction(70)
     brush_down()
     for _ in range(25):
         move_forward(5)
@@ -50,7 +49,7 @@ def flower_scene():
 
     # stem 2
     move_to(-100, -145)
-    point_in_direction(0)
+    point_in_direction(90)
     brush_down()
     for _ in range(25):
         move_forward(5)
@@ -62,7 +61,7 @@ def flower_scene():
 
     # stem 3
     move_to(-30, -145)
-    point_in_direction(0)
+    point_in_direction(90)
     brush_down()
     for _ in range(15):
         move_forward(5)

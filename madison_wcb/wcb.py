@@ -42,6 +42,7 @@ def initialize():
     # set up watercolorbot brush
     brush_up()
     park()
+    wash_brush()
 
 def cleanup():
     """IMPORTANT: Call this function at the end of your program."""

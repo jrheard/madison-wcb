@@ -19,7 +19,7 @@
 #
 import os
 import sys
-APP_DIR = os.path.normpath(os.path.join(os.getcwd(), '../'))
+APP_DIR = os.path.normpath(os.path.join(os.getcwd(), '../madison_wcb'))
 sys.path.insert(0, APP_DIR)
 
 # -- General configuration ------------------------------------------------

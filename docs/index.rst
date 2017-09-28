@@ -25,7 +25,7 @@ you write ``get_color(3)`` and the bot dips the brush in whatever color of paint
 in the fourth slot of your watercolor palette; etc.
 
 The library also makes use of the ``turtle`` module in order to allow users to visualize
-what their program will paint when it's connected to the WaterColorBot.
+what their program will paint when it's connected to the WaterColorBot. Hopefully this saves you some paint.
 
 If your goal is to find the sanest, best way to paint pictures using a WaterColorBot,
 your best bet is to read through `the bot's official documentation <http://wiki.evilmadscientist.com/WaterColorBot_Software>`_

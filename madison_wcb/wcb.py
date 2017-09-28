@@ -1,8 +1,6 @@
 import requests
 import turtle
 
-# TODO change coordinate system from scratch to math
-
 ### Implementation details
 
 # Global mutable state. Forgive me.
@@ -109,8 +107,10 @@ def point_in_direction(angle):
     Arguments:
         angle - a number between 0 and 360.
     """
-    _make_cnc_request("move.absturn./" + str(angle))
-    state['turtle'].setheading(90 - angle)
+    # convert angle from regular coordinates to scratch coordinates
+    _make_cnc_request("move.absturn./" + str(90 - angle))
+
+    state['turtle'].setheading(angle)
 
 def move_forward(num_steps):
     """Moves the brush forward a few steps in the direction that its "turtle" is facing.

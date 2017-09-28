@@ -1,4 +1,8 @@
+import random
 from madison_wcb.wcb import *
+
+# TODO jrheard verify that the angles and turning and everything are correct -
+# make sure that the output of this file matches tamara's paintings from a couple weeks ago
 
 
 def draw_flower(x, y):
@@ -72,8 +76,8 @@ def flower_scene():
     draw_flower(x2, y2)
     draw_flower(x3, y3)
 
-    wash_brush()
-    park()
+    cleanup()
+    input("Done! Press Enter to close the program.")
 
 
 if __name__ == "__main__":

@@ -12,13 +12,16 @@ How to draw stuff on your computer screen
 Here's a short Python program that draws a box in the middle of your computer screen (and on your WaterColorBot, if it's plugged into your computer)::
 
     # Import all the functions in the `madison_wcb` library.
-    from madison_wcb import *
+    from madison_wcb.wcb import *
 
     # IMPORTANT: You MUST call initialize() at the
     # start of your program. It won't work otherwise.
     initialize()
 
-    # TODO GET PAINT
+    # Dip the brush in whatever color's currently located
+    # in the fourth spot from the top in your bot's
+    # watercolor palette.
+    get_color(3)
 
     # Get ready to draw a box: move to the top-left
     # corner of the box we're going to draw.

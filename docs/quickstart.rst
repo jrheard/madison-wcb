@@ -18,6 +18,8 @@ Here's a short Python program that draws a box in the middle of your computer sc
     # start of your program. It won't work otherwise.
     initialize()
 
+    # TODO GET PAINT
+
     # Get ready to draw a box: move to the top-left
     # corner of the box we're going to draw.
     move_to(-10, 10)
@@ -34,7 +36,7 @@ Here's a short Python program that draws a box in the middle of your computer sc
     for i in range(4):
 
         # Move forward twenty steps, then
-        # turn 90 degrees to the right.
+        # turn ninety degrees to the right.
         move_forward(20)
         turn_right(90)
 

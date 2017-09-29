@@ -74,3 +74,11 @@ the instructions in the **Installation** and **Running** sections.
 
 Once you've done that, you're good to go - when you run a program that uses :mod:`madison_wcb`,
 it should automatically draw stuff on the robot as well as on your screen.
+
+More Example Programs
+---------------------
+
+``madison_wcb`` comes with a few `example programs <https://github.com/jrheard/madison_wcb/tree/master/madison_wcb/examples>`_
+that you can use as starting points. Read through them, try to predict what they'll do or just copy-paste them
+into your editor and run them yourself! Once you've got one of them running, try making a change to it and see what happens,
+and then make more changes, and just generally keep going and have a great time. Play around!

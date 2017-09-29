@@ -12,5 +12,5 @@ setup(
     author_email="jrrrheard@gmail.com",
     license="MIT",
     packages=find_packages(),
-    install_requires=['requests'],
+    install_requires=['requests', 'turtle'],
 )

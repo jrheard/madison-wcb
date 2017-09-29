@@ -14,6 +14,8 @@ state = {
 WCB_WIDTH = 500
 WCB_HEIGHT = 360
 
+DEFAULT_REINKING_DISTANCE_IN_CM = 48
+
 def _make_cnc_request(endpoint):
     """CNC Server is the way that madison_wcb talks to the WaterColorBot.
 
@@ -43,6 +45,7 @@ def initialize():
     brush_up()
     park()
     wash_brush()
+    set_reinking_distance(DEFAULT_REINKING_DISTANCE_IN_CM)
 
 def cleanup():
     """IMPORTANT: Call this function at the end of your program."""
@@ -165,3 +168,11 @@ def get_y():
         A number between -180 and 180, representing the brush's current vertical position.
     """
     return state['turtle'].ycor()
+
+def set_reinking_distance(distance_in_cm):
+    """Sets the number of centimeters the bot will draw before re-inking the brush with the last used paint.
+
+    Arguments:
+        distance_in_cm - an integer representing a number of centimeters.
+    """
+    _make_cnc_request("/penreink/" + str(distance_in_cm))

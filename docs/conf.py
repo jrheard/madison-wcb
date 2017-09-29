@@ -22,6 +22,9 @@ import sys
 APP_DIR = os.path.normpath(os.path.join(os.getcwd(), '../madison_wcb'))
 sys.path.insert(0, APP_DIR)
 
+# per https://stackoverflow.com/questions/45484077/sphinx-autodoc-on-readthedocs-importerror-no-module-named-tkinter
+autodoc_mock_imports = ['_tkinter']
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.

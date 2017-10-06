@@ -68,15 +68,15 @@ def get_color(index):
         index - an integer between 0 and 7, inclusive. Tells the bot which color you want.
     """
     if index in range(0, 8):
+        # Send the turtle to the top-left corner of the window to imitate the position of the WCB's brush.
+        state['turtle'].goto(-WCB_WIDTH / 2, -WCB_HEIGHT / 2)
+
         _make_cnc_request("tool.color./" + str(index))
 
         # This is the order of the colors in the palette in our classroom's bot; yours may vary!
         colors = ["black", "red", "orange", "yellow", "green", "blue", "purple", "brown"]
 
         state['turtle'].color(colors[index])
-
-        # Send the turtle to the top-left corner of the window to imitate the position of the WCB's brush.
-        state['turtle'].goto(-WCB_WIDTH / 2, -WCB_HEIGHT / 2)
 
     else:
         print("Color indexes must be between 0 and 7, but you gave me: " + index)

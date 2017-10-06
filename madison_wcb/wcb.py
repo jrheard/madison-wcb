@@ -22,7 +22,7 @@ def _make_cnc_request(endpoint):
     See https://github.com/techninja/cncserver/ for more information.
     """
     if state['connected_to_bot']:
-        requests.get('http://localhost:4242/' + endpoint)
+        return requests.get('http://localhost:4242/' + endpoint)
 
 
 ### Public API
@@ -175,4 +175,4 @@ def set_reinking_distance(distance_in_cm):
     Arguments:
         distance_in_cm - an integer representing a number of centimeters.
     """
-    _make_cnc_request("/penreink/" + str(distance_in_cm))
+    _make_cnc_request("penreink/" + str(distance_in_cm))

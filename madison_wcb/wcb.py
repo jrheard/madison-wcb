@@ -43,8 +43,8 @@ def initialize():
 
     # set up watercolorbot brush
     brush_up()
-    park()
     wash_brush()
+    park()
     set_reinking_distance(DEFAULT_REINKING_DISTANCE_IN_CM)
 
 def cleanup():

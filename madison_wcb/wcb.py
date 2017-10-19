@@ -41,6 +41,7 @@ def initialize():
     state['window'].setup(width=WCB_WIDTH, height=WCB_HEIGHT)
     state['turtle'] = turtle.Turtle()
     state['turtle'].width(5)
+    point_in_direction(0)
 
     # set up watercolorbot brush
     brush_up()

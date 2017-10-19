@@ -59,6 +59,12 @@ The important things to remember are that you **must** call ``initialize()`` at
 the beginning of your program, and that you should also call ``cleanup()`` at
 the end of your program. Aside from that, go nuts!
 
+Note: When you run your program, you'll see a small window on your screen that
+simulates what'll happen when you have the watercolorbot paint your picture.
+**Make sure that your picture stays within the bounds of that small window**;
+anything that you draw outside of that window will not get painted when you
+run your program on the actual bot.
+
 To see a list of all of the different functions you can use to control the bot,
 click on this link: :mod:`madison_wcb`. You can also read the library's
 `source code <https://github.com/jrheard/madison_wcb/blob/master/madison_wcb.py>`_,

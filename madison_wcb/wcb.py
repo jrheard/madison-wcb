@@ -132,6 +132,8 @@ def turn_left(relative_angle):
         relative_angle - a number like 10.
             A bigger number makes the turtle turn farther to the left.
     """
+    assert int(relative_angle) == relative_angle, "turn_left() only accepts integers, but you gave it " + str(relative_angle)
+
     _make_cnc_request("move.left./" + str(relative_angle))
     state['turtle'].left(relative_angle)
 
@@ -142,6 +144,8 @@ def turn_right(relative_angle):
         relative_angle - a number like 10.
             A bigger number makes the turtle turn farther to the right.
     """
+    assert int(relative_angle) == relative_angle, "turn_right() only accepts integers, but you gave it " + str(relative_angle)
+
     _make_cnc_request("move.right./" + str(relative_angle))
     state['turtle'].right(relative_angle)
 

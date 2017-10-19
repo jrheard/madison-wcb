@@ -8,13 +8,14 @@ state = {
     'connected_to_bot': False,
     'window': None,
     'turtle': None,
+    'distance_traveled': 0,
 }
 
 # These measurements are in "steps", which are basically pixels.
 WCB_WIDTH = 500
 WCB_HEIGHT = 360
 
-DEFAULT_REINKING_DISTANCE_IN_CM = 48
+SUGGESTED_REINKING_DISTANCE_IN_CM = 48
 
 def _make_cnc_request(endpoint):
     """CNC Server is the way that madison_wcb talks to the WaterColorBot.
@@ -45,7 +46,6 @@ def initialize():
     brush_up()
     wash_brush()
     park()
-    set_reinking_distance(DEFAULT_REINKING_DISTANCE_IN_CM)
 
 def cleanup():
     """IMPORTANT: Call this function at the end of your program."""
@@ -60,6 +60,7 @@ def park():
 def wash_brush():
     """Wash the brush in water."""
     _make_cnc_request("pen.wash")
+    state['distance_traveled'] = 0
 
 def get_color(index):
     """Dips the brush in paint.
@@ -77,6 +78,7 @@ def get_color(index):
         colors = ["black", "red", "orange", "yellow", "green", "blue", "purple", "brown"]
 
         state['turtle'].color(colors[index])
+        state['distance_traveled'] = 0
 
     else:
         print("Color indexes must be between 0 and 7, but you gave me: " + index)
@@ -123,7 +125,9 @@ def move_forward(num_steps):
         num_steps - a number like 20. A bigger number makes the brush move farther.
     """
     _make_cnc_request("move.forward./" + str(num_steps))
+
     state['turtle'].forward(num_steps)
+    state['distance_traveled'] += num_steps
 
 def turn_left(relative_angle):
     """Turns the brush's "turtle" to the left.
@@ -180,3 +184,16 @@ def set_reinking_distance(distance_in_cm):
         distance_in_cm - an integer representing a number of centimeters.
     """
     _make_cnc_request("penreink/" + str(distance_in_cm))
+
+def get_distance_traveled():
+    """Returns a number like 123, representing the distance that the brush has traveled
+    since the last time that it was dipped in paint or water.
+
+    NOTE: Only tracks movement triggered by calls to the `move_forward()` function.
+    Movement caused by `move_to()` is _not_ recorded.
+
+    This number represents the number of "steps" that the brush has traveled, not the number
+    of inches or centimeters; you'll have to do some experimentation on your own to figure
+    out e.g. how many centimeters 100 steps is equal to.
+    """
+    return state['distance_traveled']

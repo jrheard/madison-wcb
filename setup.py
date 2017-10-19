@@ -4,7 +4,7 @@ long_description="This library's source code lives at https://github.com/jrheard
 
 setup(
     name="madison_wcb",
-    version="0.1.10",
+    version="0.1.11",
     description="A library that allows users to directly control a WaterColorBot by writing Python code.",
     long_description=long_description,
     url="http://github.com/jrheard/madison_wcb",

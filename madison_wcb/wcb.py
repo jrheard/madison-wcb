@@ -125,6 +125,8 @@ def move_forward(num_steps):
     Arguments:
         num_steps - a number like 20. A bigger number makes the brush move farther.
     """
+    assert int(num_steps) == num_steps, "move_forward() only accepts integers, but you gave it " + str(num_steps)
+
     _make_cnc_request("move.forward./" + str(num_steps))
 
     state['turtle'].forward(num_steps)
